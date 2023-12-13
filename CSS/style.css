@@ -1,0 +1,390 @@
+.image {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+
+  margin: 10px auto;
+}
+
+.pfp {
+  width: 110px;
+  height: 110px;
+
+  object-fit: cover;
+
+  margin: 10px auto;
+  border-radius: 100px;
+  border: none;
+  padding: auto;
+
+  box-shadow: 0 0 40px 0px rgba(36, 36, 36, 0.40);
+
+  transition: box-shadow 1s ease, opacity 0.5s ease-in-out;
+  animation: boximage1 3s infinite;
+}
+
+@keyframes boximage1 {
+  0% {
+    box-shadow: 0 0 40px 0px rgba(36, 36, 36, 0.40);
+  }
+  50% {
+    box-shadow: 0 0 30px 0px rgba(146, 146, 146, 0.89);
+  }
+  
+}
+
+
+.general2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0));
+  align-items: center;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+
+}
+
+.content1 {
+  margin: auto;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(46, 31, 22, 0.5), rgba(14, 36, 36, 0.5)), url(../Assets/Images/BG.jpg), no-repeat fixed;
+  background-size: auto;
+
+  animation: 20s infinite ease bgtotal1;
+
+  overflow-x: hidden;
+
+  font-family: 'Rubik', sans-serif;
+
+  transition: all 0.55s ease;
+}
+
+/*Propiedades Generales De Los Links (Botones) */
+
+.links { /* División General*/
+  text-align: center;
+  margin: auto;
+
+  width: 90%;
+}
+
+button {
+  margin: 5px auto;
+  text-align: center;
+  padding: 15px 32px;
+  display: inline-block;
+
+  width: 70%;
+  height: 56px;
+
+  background-color: #00000077; 
+  border: 3px solid transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px 100px 20px 20px;
+  box-shadow: 5px 5px transparent;
+  font-size: 16px;
+  
+  transition: all .2s ease;
+}
+
+.buttonp1 {
+  font-weight: 700;
+}
+
+.buttonp1:hover, .button1:hover, .button2:hover, .button3:hover {
+  letter-spacing: 1px;
+  box-shadow: 7px 7px rgb(0, 0, 0);
+}
+
+.button1, .button2, .button3 {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.button3 {
+  border-radius: 20px 20px 100px 100px;
+}
+/* Propiedades De Textos (No Links) */
+
+.subtitle1all, .subtitle2all {
+  margin-top: 20px;
+  color: white;
+}
+
+.subtitle2all {
+  margin-bottom: 20px;
+}
+
+.subtitle1, .linecode {
+  display: inline;
+}
+
+.subtitle2, .linecode2, .period {
+  display: inline;
+}
+
+.profile-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  background: linear-gradient(75deg, rgb(219, 184, 155),rgb(145, 218, 218));
+  background-size: 300% 150%;
+
+  margin: 5px auto;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  animation: titlebgmove1 2s infinite ease;
+}
+
+@keyframes titlebgmove1 {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  
+}
+
+/* Propiedades De Pie De Página */
+
+footer {
+  color: white;
+  width: 120%;
+  margin: auto;
+  margin-left: -10%;
+  text-align: center;
+}
+
+
+.linetext1 {
+  width: 40%;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -12px;
+  height: 2px;
+  background: linear-gradient(75deg, rgb(158, 71, 0),rgb(0, 160, 160));
+  background-size: 400% 100%;
+  border-radius: 100px;
+  border: solid transparent;
+
+  transition: all 0.55s ease;
+  animation: titlebgmove2 2s infinite ease;
+}
+
+@keyframes titlebgmove2 {
+  0% {
+    background-position: 10% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 10% 100%;
+  }
+  
+}
+
+.linecode, .linecode2 {
+  opacity: 100%;
+  animation: linecode1 1s infinite;
+}
+
+@keyframes linecode1 {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+.btn {
+  margin-left: 90%;
+  width: 40px;
+  height: 40px;
+  background-color: #dfdfdf;
+  border: black;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: all .25s ;
+}
+
+button:hover {
+  background-color: #00000034; 
+  border: 3px solid white;
+}
+
+/* --- Tooltip text ---*/
+
+.btn, .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+   
+  position: absolute;
+  z-index: 1;
+}
+
+.btn:hover .tooltiptext {
+  visibility: visible;
+}
+
+footer{
+  margin-top: -1%;
+}
+
+/* ----- Edición para verse mejor en el resto de las plataformas -----*/
+
+@media screen and (max-width: 800px) {
+  button, .linker {
+    width: 100;
+    
+}
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: white;
+  }
+  .general2 {
+    background: none;
+  }
+  .pfp {
+    width: 110px;
+    height: 110px;
+  
+    object-fit: cover;
+  
+    margin: 10px auto;
+    border-radius: 100px;
+    border: 5px solid black;
+    padding: 0em 10em auto;
+  
+    box-shadow: none;
+  
+    transition: box-shadow 1s ease, opacity 0.5s ease-in-out;
+    animation: boximage1 3s infinite;
+  }
+
+  @keyframes boximage1 {
+    0% {
+      box-shadow: none;
+    }
+    50% {
+      box-shadow: none;
+    }
+    
+  }
+  .profile-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+  
+    background: black;
+  
+    margin: 5px auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  
+    animation: titlebgmove1 2s infinite ease;
+  }
+  footer{
+    margin-top: -10%;
+    color: black;
+  }
+  .linetext1 {
+    width: 40%;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: -12px;
+    height: 2px;
+    background: black;
+    background-size: 400% 100%;
+    border-radius: 100px;
+    border: solid transparent;
+  
+    transition: all 0.55s ease;
+    animation: titlebgmove2 2s infinite ease;
+  }
+  .subtitle1all, .subtitle2all {
+    margin-top: 20px;
+    color: black;
+  }
+  .buttonp1:hover, .button1:hover, .button2:hover, .button3:hover {
+    letter-spacing: 1px;
+    box-shadow: 7px 7px rgb(0, 0, 0);
+    border: 5px solid black;
+  }
+  button {
+    margin: 5px auto;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+  
+    width: 70%;
+    height: 56px;
+  
+    background-color: #00000000; 
+    border: 5px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius: 100px 100px 20px 20px;
+    box-shadow: 5px 5px transparent;
+    font-size: 16px;
+    
+    transition: all .2s ease;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+.buttonp1{
+  height: 76px;
+  border-radius: 20px 20px 20px 20px;
+}
+}
+
+@media screen and (max-width: 600px){
+.paragraph1 {
+  transition: all 0.55s ease;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+button{
+  height: 76px;
+} 
+}
+
+@media screen and (max-width: 400px) {
+footer {
+  margin-top: -50px;
+}
+}
+
+@media screen and (max-width: 300px){
+.buttonp1{
+  height: 90px;
+  border-radius: 20px 20px 20px 20px;
+} 
+}
